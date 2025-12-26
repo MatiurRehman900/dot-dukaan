@@ -177,11 +177,12 @@ a:hover {
 }
 
 .hero-section .input-group {
-    width: 626;
-    height: 55;
+    width: 626px;
     border-radius: 33px;
     background-color: white;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .hero-section .input-group input {
@@ -639,7 +640,6 @@ a:hover {
 }
 
 .partners-image-box {
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -971,7 +971,24 @@ footer hr {
 .footer-social a:hover {
     color: var(--secondary-green);
 }
-
+.footer-contact-item{
+  color: var(--dark);
+}
+.footer-contact-item h6{
+  color: var(--dark);
+}
+.footer-contact-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--white);
+    background-color: var(--dark);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 /* Responsive */
 @media (max-width: 768px) {
     .hero-title {
