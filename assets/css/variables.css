@@ -1,0 +1,82 @@
+/* Color Scheme Variables */
+:root {
+  --primary-green: #BCFF00;
+  --secondary-green: #BCED08;
+  --tertiary-green: #BCED07F5;
+  --dark: #1A1A1A;
+  --white: #FFFFFF;
+  --primary-blue: #0C6AFE;
+  --secondary-blue: #0C6AFF;
+  --light-gray: #F6F6F6;
+  --black: #000000;
+  --gray: #888888;
+}
+
+/* Bootstrap 4 Color Overrides */
+.btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-blue);
+  border-color: var(--secondary-blue);
+}
+
+.btn-success {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: var(--dark);
+}
+
+.btn-black{
+    background-color: #000000;
+    border-color: #000000;
+    color: var(--white);
+}
+.btn-success:hover {
+  background-color: var(--secondary-green);
+  border-color: var(--secondary-green);
+  color: var(--dark);
+}
+
+.alert-success {
+  background-color: var(--primary-green);
+  border-color: var(--secondary-green);
+  color: var(--dark);
+}
+
+.badge-primary {
+  background-color: var(--primary-blue);
+}
+
+.badge-success {
+  background-color: var(--primary-green);
+  color: var(--dark);
+}
+
+.bg-light {
+  background-color: var(--light-gray) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.text-primary {
+  color: var(--primary-blue) !important;
+}
+
+.text-success {
+  color: var(--primary-green) !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-blue);
+}

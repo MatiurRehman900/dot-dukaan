@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dot-dukaan - Pakistan's First B2B E-Commerce Hub</title>
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Science+Gothic:wght@100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="w-100 px-5 d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <!-- <span>dot-dukaan</span> -->
+                <img src="/assets/images/logo.png" alt="">
+            </a>
+
+            <!-- Menu Items -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/marketplace.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/vendor.html">For Vendors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/partner.html">Partners</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Login Button -->
+            <button class="btn navbar-btn d-none d-lg-block">
+                Login / Register
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section px-5">
+        <div class="text-white">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="hero-title">
+                        Empowering Businesses - Pakistan's <span class="highlight">First B2B E-Commerce Hub</span>
+                    </h1>
+                    <p class="hero-description">
+                        Connect with trusted vendors and suppliers. Streamline your procurement process.
+                    </p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search Product Here..."
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="featured-categories-row">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center featured-btns">
+                            <p class="mb-0 me-3 text-white">Featured Categories:</p>
+                            <button class="btn btn-sm btn-outline-light category-btn " data-cat="kitchen">Kitchen
+                                Utensils</button>
+                            <button class="btn btn-sm btn-outline-light category-btn" data-cat="cleaning">Cleaning
+                                Supplies</button>
+                            <button class="btn btn-sm btn-outline-light category-btn" data-cat="storage">Storage &amp;
+                                Organization</button>
+                            <button class="btn btn-sm btn-outline-light category-btn" data-cat="decor">Home
+                                Décor</button>
+                            <button class="btn btn-sm btn-outline-light category-btn" data-cat="improvement">Home &amp;
+                                Improvement</button>
+                            <button class="btn btn-sm btn-outline-light category-btn" data-cat="health">Health &amp;
+                                Beauty</button>
+                            <button class="btn btn-sm btn-outline-light category-btn" data-cat="smart">Smart
+                                Gadgets</button>
+                        </div>
+
+                        <div class="category-options mt-3">
+                            <div class="category-panel" data-cat="kitchen">
+                                <ul class="list-unstyled mb-0">
+                                    <li>• Cooking Tools</li>
+                                    <li>• Cutting &amp; Chopping</li>
+                                    <li>• Baking Essentials</li>
+                                    <li>• Measuring Tools</li>
+                                    <li>• Dining</li>
+                                    <li>• Kitchen Storage</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-panel" data-cat="cleaning">
+                                <ul class="list-unstyled mb-0">
+                                    <li>• Home Cleaning</li>
+                                    <li>• Air Fresheners &amp; Deodorizers</li>
+                                    <li>• Laundry Care</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-panel" data-cat="storage">
+                                <ul class="list-unstyled mb-0">
+                                    <li>• Wardrobe &amp; Closet Organizers</li>
+                                    <li>• Bathroom Storage</li>
+                                    <li>• Office &amp; Desk Organizers</li>
+                                    <li>• Travel &amp; Luggage Organizers</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-panel" data-cat="decor">
+                                <ul class="list-unstyled mb-0">
+                                    <li>• Lighting</li>
+                                    <li>• Decorative Accessories</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-panel" data-cat="improvement">
+                                <ul class="list-unstyled mb-0">
+                                    <li>• Tools &amp; Hardware</li>
+                                    <li>• Safety &amp; Security</li>
+                                    <li>• Outdoor &amp; Garden</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-panel" data-cat="health">
+                                <ul class="list-unstyled mb-0">
+                                    <li>• Skincare</li>
+                                    <li>• Haircare</li>
+                                    <li>• Personal Grooming</li>
+                                    <li>• Fitness &amp; Wellness</li>
+                                    <li>• Oral care</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-panel" data-cat="smart">
+                                <ul class="list-unstyled mb-0">
+                                    <li>• Smart Home Devices</li>
+                                    <li>• Wearable Tech</li>
+                                    <li>• Portable Devices</li>
+                                    <li>• Kitchen Smart Gadgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Categories Section -->
+    <!-- <section class="categories-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <button class="btn btn-sm category-btn category-btn-featured">
+                            Featured Categories
+                        </button>
+                        <button class="btn btn-sm btn-outline-light category-btn">
+                            Electronics
+                        </button>
+                        <button class="btn btn-sm btn-outline-light category-btn">
+                            Textiles
+                        </button>
+                        <button class="btn btn-sm btn-outline-light category-btn">
+                            Manufacturing
+                        </button>
+                        <button class="btn btn-sm btn-outline-light category-btn">
+                            Agriculture
+                        </button>
+                        <button class="btn btn-sm btn-outline-light category-btn">
+                            Services
+                        </button>
+                        <button class="btn btn-sm btn-outline-light category-btn">
+                            View All
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Featured Products Section -->
+    <section class="products-section py-5">
+        <div class="px-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="products-header">Viral Products</h2>
+                <a href="#" class="products-view-all">View all →</a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Growth Engines Section -->
+    <section class="py-5">
+        <div class="px-5">
+            <h2 class="growth-engines-title text-center mb-5">Three Growth Engines</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 growth-engine-card">
+                        <div class="growth-engine-overlay">
+                            <h4 class="growth-engine-title">Vendor</h4>
+                            <p class="growth-engine-desc">Reach buyers across Pakistan with our B2B ecommerce platform.
+                                Easily list your products, manage bulk orders, and build trust with verified quality,
+                                all from one simple, powerful place to grow your business.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 growth-engine-card"
+                        style="background-image: url(/assets/images/buyer.png);">
+                        <div class="growth-engine-overlay">
+                            <h4 class="growth-engine-title">Buyer</h4>
+                            <p class="growth-engine-desc">Access trusted suppliers through one reliable B2B platform.
+                                Enjoy wholesale pricing, verified quality products, faster delivery, and the flexibility
+                                to order lower quantities while maintaining strong margins.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 growth-engine-card"
+                        style="background-image: url(/assets/images/patner.png);">
+                        <div class="growth-engine-overlay">
+                            <h4 class="growth-engine-title">Partners</h4>
+                            <p class="growth-engine-desc">Join a growing ecosystem shaping the future of Pakistan’s
+                                ecommerce. Explore investment opportunities through inventory pools, white-label stores,
+                                or private-label brands, and grow scalable, brand-ready ventures with us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Process Section -->
+    <section class="process-section py-5">
+
+        <div class="container">
+            <h2 class="process-title">Simple Process for All Ecosystems Participants</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="process-item">
+                        <div class="process-number">1</div>
+                        <div>
+                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Register Your Business</h6>
+                            <p>Create your account and complete your profile</p>
+                        </div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="process-number">2</div>
+                        <div>
+                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Browse Vital & Core SKUs</h6>
+                            <p>Explore our extensive product catalog</p>
+                        </div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="process-number">3</div>
+                        <div>
+                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Place Your Order</h6>
+                            <p>Add products and complete checkout</p>
+                        </div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="process-number">4</div>
+                        <div>
+                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Pay & Receive</h6>
+                            <p>Secure payment and fast delivery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="process-image-box">
+                        <span>📦</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Stands Out Section -->
+    <section class="standout-section py-5">
+        <div class="container">
+            <h2 class="standout-title">How DotDukaan Stands Out</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="standout-card">
+                        <div class="standout-emoji">🛡️</div>
+                        <h5>Secure Payments</h5>
+                        <p>All transactions are protected and verified</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="standout-card">
+                        <div class="standout-emoji">📊</div>
+                        <h5>B2B Marketplace</h5>
+                        <p>Dedicated platform for business transactions</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="standout-card">
+                        <div class="standout-emoji">🚀</div>
+                        <h5>Reliable Logistics & Order Fulfillment</h5>
+                        <p>Fast and dependable delivery network</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Partners Work Section -->
+    <section class="partners-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="partners-image-box">
+                        <span>👥</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="partners-title">How Partners Work</h2>
+                    <div class="partners-item">
+                        <h6>📋 Register & Verify</h6>
+                        <p>List your products, manage orders, and connect with verified buyers</p>
+                    </div>
+                    <div class="partners-item">
+                        <h6>📈 Get Orders</h6>
+                        <p>Receive bulk orders from corporate buyers and resellers</p>
+                    </div>
+                    <div class="partners-item">
+                        <h6>💰 Process & Dispatch</h6>
+                        <p>Process orders through our logistics dashboard</p>
+                    </div>
+                    <div class="partners-item">
+                        <h6>✅ Track & Grow</h6>
+                        <p>Track sales, earnings, and scale your business</p>
+                    </div>
+                    <button class="btn partners-btn">
+                        Become a Partner
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="accordion" role="tablist">
+                        <div class="faq-card">
+                            <div class="faq-card-header" role="tab" id="headingOne">
+                                <h6 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        What is dot-dukaan?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    dot-dukaan is Pakistan's first comprehensive B2B e-commerce hub connecting buyers
+                                    and sellers
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-card-header" role="tab" id="headingTwo">
+                                <h6 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Who can use dot-dukaan?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Any registered business, vendor, or buyer can register and use our platform
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-card-header" role="tab" id="headingThree">
+                                <h6 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        How does dot-dukaan work?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Simply register, browse products, place orders, and we handle the payment and
+                                    delivery
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-card-header" role="tab" id="headingFour">
+                                <h6 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Why choose dot-dukaan?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Safe transactions, verified vendors, competitive prices, and excellent customer
+                                    support
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="faq-image-box">
+                        <div class="faq-image-content">
+                            <span class="faq-emoji">❓</span>
+                            <p class="faq-image-text">Have more questions? Contact our support team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <h2 class="cta-title">Get Weekly Viral Products Reports</h2>
+            <p class="cta-description">Stay updated with trending products and special offers</p>
+            <div class="input-group cta-input-group">
+                <input type="email" class="form-control cta-input" placeholder="Enter your email">
+                <div class="input-group-append">
+                    <button class="btn cta-btn">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <h5>dot-dukaan</h5>
+                    <p>Pakistan's First B2B E-Commerce Hub</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Our Platform</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Browse Products</a></li>
+                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Account</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 dot-dukaan. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-right footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center footer-bottom">
+            <p>Follow us on social media</p>
+            <div class="footer-social">
+                <a href="#">f</a>
+                <a href="#">𝕏</a>
+                <a href="#">📷</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 4 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/home.js" defer></script>
+</body>
+
+</html>
