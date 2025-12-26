@@ -17,8 +17,6 @@
         rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
 </head>
@@ -86,7 +84,7 @@
                 <div class="col-12">
                     <div class="featured-categories-row">
                         <div class="d-flex flex-wrap justify-content-center align-items-center featured-btns">
-                            <p class="mb-0 me-3 text-white">Featured Categories:</p>
+                            <p class="mt-1 mr-3 text-white">Featured Categories:</p>
                             <button class="btn btn-sm btn-outline-light category-btn " data-cat="kitchen">Kitchen
                                 Utensils</button>
                             <button class="btn btn-sm btn-outline-light category-btn" data-cat="cleaning">Cleaning
@@ -390,45 +388,48 @@
     <section class="process-section py-5">
 
         <div class="container">
-            <h2 class="process-title">Simple Process for All Ecosystems Participants</h2>
+            <h2 class="process-title">Simple Process for All Ecosystem Participants</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="process-item">
                         <div class="process-number">1</div>
                         <div>
-                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Register Your Business</h6>
-                            <p>Create your account and complete your profile</p>
+                            <h6>Register Your Business</h6>
+                            <p>Sign up with your name, email, and phone number, then verify your account to get started.
+                            </p>
                         </div>
                     </div>
 
                     <div class="process-item">
                         <div class="process-number">2</div>
                         <div>
-                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Browse Vital & Core SKUs</h6>
-                            <p>Explore our extensive product catalog</p>
+                            <h6>Browse Viral & Core SKUs</h6>
+                            <p>Explore daily curated trending and high-demand products across multiple categories.</p>
                         </div>
                     </div>
 
                     <div class="process-item">
                         <div class="process-number">3</div>
                         <div>
-                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Place Your Order</h6>
-                            <p>Add products and complete checkout</p>
+                            <h6>Place Your Order</h6>
+                            <p>Compare offers, confirm selections, and complete secure transactions in just a few
+                                clicks.</p>
                         </div>
                     </div>
 
                     <div class="process-item">
                         <div class="process-number">4</div>
                         <div>
-                            <h6 style="margin-bottom: 0.5rem; font-weight: 600;">Pay & Receive</h6>
-                            <p>Secure payment and fast delivery</p>
+                            <h6>Pay & Receive</h6>
+                            <p>Choose your payment method and receive stock within 3-7 days with reliable local
+                                delivery.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="process-image-box">
-                        <span>📦</span>
+                        <img src="/assets/images/process-img.png" width="100%" alt="">
                     </div>
                 </div>
             </div>
@@ -437,30 +438,41 @@
 
     <!-- How It Stands Out Section -->
     <section class="standout-section py-5">
-        <div class="container">
+        <div class="px-5">
             <h2 class="standout-title">How DotDukaan Stands Out</h2>
+            <hr>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="standout-card">
-                        <div class="standout-emoji">🛡️</div>
+                        <div class="standout-emoji">
+                            <img src="/assets/images/standout-1.png" alt="" width="100%">
+                        </div>
                         <h5>Secure Payments</h5>
-                        <p>All transactions are protected and verified</p>
+                        <p>Providing a secure payment gateway which
+                            ensures safe and hassle-free transactions.</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="standout-card">
-                        <div class="standout-emoji">📊</div>
-                        <h5>B2B Marketplace</h5>
-                        <p>Dedicated platform for business transactions</p>
+                        <div class="standout-emoji">
+                            <img src="/assets/images/standout-2.png" alt="" width="100%">
+                        </div>
+                        <h5>Electronics B2B Marketplace</h5>
+                        <p>Pakistan’s #1 B2B platform for wholesale smart
+                            electronic gadgets at the best prices.</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="standout-card">
-                        <div class="standout-emoji">🚀</div>
+                        <div class="standout-emoji">
+                            <img src="/assets/images/standout-3.png" alt="" width="100%">
+
+                        </div>
                         <h5>Reliable Logistics & Order Fulfillment</h5>
-                        <p>Fast and dependable delivery network</p>
+                        <p>Seamless logistics, hassle-free order fulfillment
+                            and zero operational costs for bulk orders.</p>
                     </div>
                 </div>
             </div>
@@ -469,34 +481,212 @@
 
     <!-- How Partners Work Section -->
     <section class="partners-section py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="partners-image-box">
-                        <span>👥</span>
+        <div class="px-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="partners-header mb-4">How Our Partners Work</h4>
+
+                        <!-- Nav Tabs -->
+                        <ul class="nav nav-tabs partners-tabs" id="partnersTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="buyer-tab" data-toggle="tab" data-target="#buyerTab"
+                                    type="button" role="tab" aria-controls="buyerTab"
+                                    aria-selected="true">Buyer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="vendor-tab" data-toggle="tab" data-target="#vendorTab"
+                                    type="button" role="tab" aria-controls="vendorTab"
+                                    aria-selected="false">Vendor</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="partner-tab" data-toggle="tab" data-target="#partnerTab"
+                                    type="button" role="tab" aria-controls="partnerTab"
+                                    aria-selected="false">Partners</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="partnersTabContent">
+                <!-- Buyer Tab -->
+                <div class="tab-pane fade show active" id="buyerTab" role="tabpanel" aria-labelledby="buyer-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="partners-image-box">
+                                <img src="/assets/images/patners-img.png" width="100%" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="rounded-pill partners-badge">
+                                we make brands powerful
+                            </div>
+                            <h2 class="partners-title">Source smarter and scale faster with access to verified
+                                suppliers,
+                                competitive prices, and fast delivery.</h2>
+                            <div class="partners-item">
+                                <div class="process-number">1</div>
+                                <div>
+                                    <h6>Sign Up</h6>
+                                    <p>Create your buyer account with name, email, and phone number.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">2</div>
+                                <div>
+                                    <h6>Browse Products</h6>
+                                    <p>Explore curated viral and core SKUs updated daily.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">3</div>
+                                <div>
+                                    <h6>Get Best Prices</h6>
+                                    <p>Get offers from multiple verified vendors.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">4</div>
+                                <div>
+                                    <h6>Confirm Order</h6>
+                                    <p>Checkout securely.</p>
+                                </div>
+                            </div>
+                            <div class="partners-item">
+                                <div class="process-number">5</div>
+                                <div>
+                                    <h6>Receive Stock</h6>
+                                    <p>Get your delivery within 3–7 days</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h2 class="partners-title">How Partners Work</h2>
-                    <div class="partners-item">
-                        <h6>📋 Register & Verify</h6>
-                        <p>List your products, manage orders, and connect with verified buyers</p>
+
+                <!-- Vendor Tab -->
+                <div class="tab-pane fade" id="vendorTab" role="tabpanel" aria-labelledby="vendor-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="partners-image-box">
+                                <img src="/assets/images/patners-img.png" width="100%" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="rounded-pill partners-badge">
+                                we make brands powerful
+                            </div>
+                            <h2 class="partners-title">List your products, manage orders, and connect with verified
+                                buyers
+                                nationwide - all from one dashboard.</h2>
+                            <div class="partners-item">
+                                <div class="process-number">1</div>
+                                <div>
+                                    <h6>Register & Verify</h6>
+                                    <p>Sign up with your business details and complete quick verification.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">2</div>
+                                <div>
+                                    <h6>List Products</h6>
+                                    <p>Add items, descriptions, and pricing in minutes.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">3</div>
+                                <div>
+                                    <h6>Get Orders</h6>
+                                    <p>Receive inquiries and bulk order requests from verified buyers.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">4</div>
+                                <div>
+                                    <h6>Process & Dispatch</h6>
+                                    <p>Manage logistics through our integrated delivery network.</p>
+                                </div>
+                            </div>
+                            <div class="partners-item">
+                                <div class="process-number">5</div>
+                                <div>
+                                    <h6>Track & Grow</h6>
+                                    <p>Monitor performance, optimize listings, and expand your reach.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button class="btn patner-btn-black">Login as a Vendor</button>
+                                <button class="btn patner-outline-btn ml-4">Watch a Demo</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="partners-item">
-                        <h6>📈 Get Orders</h6>
-                        <p>Receive bulk orders from corporate buyers and resellers</p>
+                </div>
+
+                <!-- Partner Tab -->
+                <div class="tab-pane fade" id="partnerTab" role="tabpanel" aria-labelledby="partner-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="partners-image-box">
+                                <img src="/assets/images/patners-img.png" width="100%" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="rounded-pill partners-badge">
+                                we make brands powerful
+                            </div>
+                            <h2 class="partners-title">One Network. Infinite Possibilities</h2>
+                            <div class="partners-item">
+                                <div class="process-number">1</div>
+                                <div>
+                                    <h6>Create an Partner Account</h6>
+                                    <p>Sign up and verify your information.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">2</div>
+                                <div>
+                                    <h6>Choose Investment Type</h6>
+                                    <p>Select from inventory pools, white-label, or private-label projects.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">3</div>
+                                <div>
+                                    <h6>Fund & Monitor</h6>
+                                    <p>Invest securely and track your portfolio in real time.</p>
+                                </div>
+                            </div>
+
+                            <div class="partners-item">
+                                <div class="process-number">4</div>
+                                <div>
+                                    <h6>Earn Returns</h6>
+                                    <p>Receive monthly profits.</p>
+                                </div>
+                            </div>
+                            <div class="partners-item">
+                                <div class="process-number">5</div>
+                                <div>
+                                    <h6>Reinvest or Withdraw</h6>
+                                    <p>Manage your funds easily through your partner dashboard.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button class="btn patner-btn-black">Login as a Partner</button>
+                                <button class="btn patner-outline-btn ml-4">Watch a Demo</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="partners-item">
-                        <h6>💰 Process & Dispatch</h6>
-                        <p>Process orders through our logistics dashboard</p>
-                    </div>
-                    <div class="partners-item">
-                        <h6>✅ Track & Grow</h6>
-                        <p>Track sales, earnings, and scale your business</p>
-                    </div>
-                    <button class="btn partners-btn">
-                        Become a Partner
-                    </button>
                 </div>
             </div>
         </div>
@@ -504,8 +694,9 @@
 
     <!-- FAQ Section -->
     <section class="faq-section py-5">
-        <div class="container">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="px-5">
+            <h2 class="faq-title">Frequently Answer & Questions</h2>
+            <hr>
             <div class="row">
                 <div class="col-md-6">
                     <div id="accordion" role="tablist">
@@ -521,8 +712,10 @@
                             <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    dot-dukaan is Pakistan's first comprehensive B2B e-commerce hub connecting buyers
-                                    and sellers
+                                    DotDukaan is a B2B e-commerce platform dedicated to transforming the online shopping
+                                    experience in Pakistan. We connect buyers with verified suppliers, providing access
+                                    to a wide range of quality products at competitive prices while ensuring seamless
+                                    transactions and efficient logistics.
                                 </div>
                             </div>
                         </div>
@@ -532,14 +725,16 @@
                                 <h6 class="mb-0">
                                     <a data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                        Who can use dot-dukaan?
+                                        Who can use DotDukaan?
                                     </a>
                                 </h6>
                             </div>
                             <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    Any registered business, vendor, or buyer can register and use our platform
+                                    DotDukaan caters to retailers, wholesalers, drop shippers, e-commerce store owners,
+                                    and businesses looking to source products in bulk from verified suppliers.
+
                                 </div>
                             </div>
                         </div>
@@ -549,15 +744,16 @@
                                 <h6 class="mb-0">
                                     <a data-toggle="collapse" href="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        How does dot-dukaan work?
+                                         How does DotDukaan work?
                                     </a>
                                 </h6>
                             </div>
                             <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    Simply register, browse products, place orders, and we handle the payment and
-                                    delivery
+                                    Buyers can browse products, compare prices, place bulk orders, and connect with
+                                    suppliers. Vendors can list their products, receive orders, and expand their market
+                                    reach through our platform.
                                 </div>
                             </div>
                         </div>
@@ -567,15 +763,25 @@
                                 <h6 class="mb-0">
                                     <a data-toggle="collapse" href="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                        Why choose dot-dukaan?
+                                        Why choose DotDukaan?
                                     </a>
                                 </h6>
                             </div>
                             <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour"
                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    Safe transactions, verified vendors, competitive prices, and excellent customer
-                                    support
+                                    <ul>
+                                        <li>Comprehensive Product Availability: Products from top manufacturers,
+                                            retailers, and
+                                            wholesalers are available in one place.</li>
+                                        <li>Verified Sellers: Only verified sellers list products, ensuring authenticity
+                                            and
+                                            high-quality standards.</li>
+                                        <li>Competitive Prices & High-Quality Products: Businesses can access reasonably
+                                            priced,
+                                            high-quality products, reducing return risks and enhancing satisfaction.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -585,8 +791,7 @@
                 <div class="col-md-6">
                     <div class="faq-image-box">
                         <div class="faq-image-content">
-                            <span class="faq-emoji">❓</span>
-                            <p class="faq-image-text">Have more questions? Contact our support team</p>
+                            <img src="/assets/images/faq-img.png" width="100%" alt="">
                         </div>
                     </div>
                 </div>
@@ -597,72 +802,99 @@
     <!-- CTA Section -->
     <section class="cta-section py-5">
         <div class="container">
-            <h2 class="cta-title">Get Weekly Viral Products Reports</h2>
-            <p class="cta-description">Stay updated with trending products and special offers</p>
+            <center>
+                <div class="rounded-pill partners-badge bg-dark text-white text-center mb-3">
+                    we make brands powerful
+                </div>
+            </center>
+            <h2 class="cta-title">Get Weekly Viral Product Reports</h2>
+            <p class="cta-description">Stay ahead of trends straight to your inbox</p>
+
             <div class="input-group cta-input-group">
                 <input type="email" class="form-control cta-input" placeholder="Enter your email">
-                <div class="input-group-append">
-                    <button class="btn cta-btn">
-                        Subscribe
-                    </button>
-                </div>
+                <button class="btn cta-btn">
+                    Subscribe
+                </button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
+    <footer class="bg-dark text-white pt-5">
+        <div class="container-fluid">
             <div class="row mb-4">
                 <div class="col-md-3">
-                    <h5>dot-dukaan</h5>
-                    <p>Pakistan's First B2B E-Commerce Hub</p>
+                    <img src="/assets/images/logo.png" alt="" class="mb-5">
+                    <p>Empowering Businesses - Pakistan’s First E-Commerce Hub: Empowering companies with a centralized
+                        platform for streamlined trading and business growth across Pakistan.</p>
                 </div>
                 <div class="col-md-3">
-                    <h6>Our Platform</h6>
+                    <h6>Our Policies</h6>
                     <ul class="list-unstyled small">
-                        <li><a href="#">Browse Products</a></li>
-                        <li><a href="#">Become a Vendor</a></li>
-                        <li><a href="#">Partner Program</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Shipping policy</a></li>
+                        <li><a href="#">Service policy</a></li>
+                        <li><a href="#">Return/Refund/Exchange Policy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">For Sellers</a></li>
+                        <li><a href="#">For Buyers</a></li>
+                        <li><a href="#">For Partners</a></li>
+
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h6>Account</h6>
                     <ul class="list-unstyled small">
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#">My Profile</a></li>
                         <li><a href="#">Register</a></li>
-                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Login</a></li>
                     </ul>
+                </div>
+            </div>
+            <div class="row bg-primary-green py-5">
+                <div class="col-md-5">
+                    <div class="d-flex">
+                        <i class="fa fa-map"></i>
+                        <div>
+                            <p class="mb-0">Address</p>
+                            <p class="mb-0">Building 93, Fairways Commercial, Raya DHA Phase-VI, Lahore</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <h6>Support</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                    </ul>
+                    <div class="d-flex ">
+                        <i class="fa fa-phone"></i>
+                        <div>
+                            <p class="mb-0">Phone</p>
+                            <p class="mb-0">+92 42 3725 4200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex ">
+                        <i class="fa fa-mail"></i>
+                        <div>
+                            <p class="mb-0">Email</p>
+                            <p class="mb-0">contact@Dotdukaan.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 dot-dukaan. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-right footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    </p>
+            <div class="row py-4">
+                <div class="col-md-12">
+                    <p class="text-center text-gray">&copy; <b>2026</b> DotDukaan . All rights reserved. <b>Powered by DotDukaan</b></p>
                 </div>
             </div>
-        </div>
-        <div class="text-center footer-bottom">
-            <p>Follow us on social media</p>
-            <div class="footer-social">
-                <a href="#">f</a>
-                <a href="#">𝕏</a>
-                <a href="#">📷</a>
-            </div>
-        </div>
     </footer>
 
     <!-- Bootstrap 4 JS -->
