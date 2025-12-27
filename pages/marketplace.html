@@ -23,12 +23,18 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark w-100 sticky-top" style="background-color: black;">
-        <div class="w-100 px-5 d-flex justify-content-between align-items-center">
-            <!-- Logo -->
-            <a class="navbar-brand" href="/index.html">
-                <!-- <span>dot-dukaan</span> -->
-                <img src="/assets/images/logo.png" alt="">
-            </a>
+        <div class="w-100 px-3 px-md-5 d-md-flex justify-content-between align-items-center">
+            <div class="flex justify-content-between align-items-center w-100">
+                <button class="mobile-menu-btn d-lg-none btn btn-link text-white" aria-label="Open menu">
+                    <i class="fa fa-bars" style="font-size: 22px;"></i>
+                </button>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="/index.html">
+                    <!-- <span>dot-dukaan</span> -->
+                    <img src="/assets/images/logo.png" alt="">
+                </a>
+            </div>
 
             <!-- Menu Items -->
             <div class="input-group  marketplace-search-bar" style="width: 35%;">
@@ -76,7 +82,9 @@
             <div class="row py-3 align-items-center">
                 <div class="col-md-2 pl-0">
                     <div class="d-flex align-items-center">
-                        <img src="/assets/images/menu 1.png" class="border p-2" alt="" style="border-radius: 10px;">
+                        <button class="marketplace-category-btn btn btn-link p-0" aria-label="Open categories">
+                            <img src="/assets/images/menu 1.png" class="border p-2" alt="" style="border-radius: 10px;">
+                        </button>
                         <h6 class="text-white ml-3 mb-0">Shop by Department</h6>
                     </div>
                 </div>
@@ -105,7 +113,8 @@
                     </div>
                 </div>
                 <div class="col-md-3 pr-0">
-                    <div class="d-flex justify-content-end align-items-center marketplace-nav-menus-button" style="gap: 10px;">
+                    <div class="d-flex justify-content-end align-items-center marketplace-nav-menus-button"
+                        style="gap: 10px;">
                         <a href="" class="text-white text-decoration-underline fs-6">Become a Seller</a>
                         <div style="height: 20px; border: 1px solid #ffffff83;"></div>
                         <a href="" class="text-white text-decoration-underline fs-6">Track your Order</a>
@@ -116,8 +125,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero-section px-5 m-5"
-        style="background-image: url('/assets/images/marketplace-hero-bg.png'); 
+    <section class="hero-section px-3 px-md-5 m-3 m-md-5" style="background-image: url('/assets/images/marketplace-hero-bg.png'); 
         background-size: cover;
         padding-top: 70px;
         border-radius: 30px;">
@@ -143,8 +151,8 @@
                     <hr class="m-0 mb-4 p-0" style="border-color: rgba(255, 255, 255, 0.328);">
                 </div>
                 <div class="col-md-12">
-                    <div class="px-5 py-4">
-                        <div class="d-flex justify-content-between align-items-center">
+                    <div class="px-md-5 py-4">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 20px;">
                             <div class="choose-us-item">
                                 <img src="/assets/images/viral-product-icon.png" alt="" class="mr-3">
                                 <div>
@@ -196,14 +204,15 @@
 
 
     <!-- Featured Products Section -->
-    <section class="pt-3 px-5">
-        <div class="px-5">
+    <section class="pt-3 px-3 px-md-5">
+        <div class="px-3 px-md-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="products-header">Featured Categories</h2>
             </div>
             <hr>
             <div class="row">
-                <div class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-4 py-4">
+                <div
+                    class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-4 py-4 overflow-x-auto w-100">
                     <div class="feature-category">
                         <img src="/assets/images/Rectangle 514.png" alt="Kitchen Utensils">
                         <p>Kitchen Utensils</p>
@@ -265,7 +274,7 @@
     </section>
     <!-- Featured Products Section -->
     <section class="products-section py-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="products-header">Viral Products</h2>
                 <a href="#" class="products-view-all d-flex align-items-center ">View all <i
@@ -404,7 +413,7 @@
 
     <!-- Flash Sale Section -->
     <section class="flash-sale-section pb-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="flash-sale-header">Flash Sale</h2>
             </div>
@@ -443,28 +452,28 @@
     </section>
 
     <!-- CTA Section -->
-        <section class="cta-section pb-5 mb-5" style="background-image: url('/assets/images/bussniess-bg.png');">
-            <div class="container py-4">
-                <center>
-                    <div class="rounded-pill partners-badge bg-dark text-white text-center mb-3">
-                        we make brands powerful
-                    </div>
-                </center>
-                <h2 class="cta-title">Empowering Businesses <br>
-                    Pakistan’s <span class="text-success">First B2B eCommerce</span> Ecosystem.</h2>
-                <p class="cta-description">Switched from China sourcing to DotDukaan's viral products. Revenue grew
-                    400%
-                    in 6 months with 3-day delivery instead of 3 weeks.</p>
+    <section class="cta-section pb-5 mb-5" style="background-image: url('/assets/images/bussniess-bg.png');">
+        <div class="container py-md-4">
+            <center>
+                <div class="rounded-pill partners-badge bg-dark text-white text-center mb-3">
+                    we make brands powerful
+                </div>
+            </center>
+            <h2 class="cta-title">Empowering Businesses <br>
+                Pakistan’s <span class="text-success">First B2B eCommerce</span> Ecosystem.</h2>
+            <p class="cta-description">Switched from China sourcing to DotDukaan's viral products. Revenue grew
+                400%
+                in 6 months with 3-day delivery instead of 3 weeks.</p>
 
-                <button class="btn cta-btn bg-white text-dark">
-                    Buy Product
-                </button>
-            </div>
-        </section>
+            <button class="btn cta-btn bg-white text-dark">
+                Buy Product
+            </button>
+        </div>
+    </section>
 
     <!-- Featured Products Section -->
     <section class="products-section pb-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="products-header">Best Sellers</h2>
             </div>
@@ -601,7 +610,7 @@
 
     <!-- Three Growth Engines Section -->
     <section class="pb-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <h2 class="growth-engines-title mb-5">Our Influencer Promotions </h2>
             <hr>
             <div class="row mt-5">
@@ -739,6 +748,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/global.js" defer></script>
 </body>
 
 </html>

@@ -194,7 +194,6 @@ a:hover {
 }
 
 .hero-section .input-group {
-    width: 626px;
     border-radius: 33px;
     background-color: white;
     padding: 10px;
@@ -263,6 +262,12 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .choose-us-item {
+        width: 20%;
+    }
 }
 
 .choose-us-item h5 {
@@ -664,7 +669,7 @@ a:hover {
 
 .partners-tabs {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     font-family: Century Gothic;
     font-weight: 700;
     font-style: Bold;
@@ -1150,6 +1155,7 @@ footer hr {
     align-items: center;
     justify-content: center;
 }
+
 .marketplace-nav-menus ul {
     display: flex;
 }
@@ -1199,6 +1205,134 @@ footer hr {
 
 }
 
+/* Mobile sidebar & responsive tweaks */
+.mobile-menu-btn {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, visibility .25s ease;
+    z-index: 1040;
+}
+
+.sidebar-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 320px;
+    max-width: 85%;
+    background: #fff;
+    transform: translateX(-110%);
+    transition: transform .28s ease;
+    z-index: 1050;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.mobile-sidebar.open {
+    transform: translateX(0);
+}
+
+.mobile-sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.mobile-sidebar-body {
+    padding: 1rem;
+}
+
+.mobile-sidebar a {
+    color: var(--dark);
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+
+.mobile-sidebar h6 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1199px) {
+    .marketplace-search-bar {
+        width: 45% !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .marketplace-search-bar {
+        width: 55% !important;
+    }
+
+    .marketplace-nav-menus {
+        display: none !important;
+    }
+
+    .marketplace-nav-menus-button {
+        display: none !important;
+    }
+
+    .navbar .notification-icon {
+        display: none;
+    }
+
+    .navbar-btn {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .w-100.px-5.d-flex.justify-content-between.align-items-center {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .marketplace-search-bar {
+        width: 100% !important;
+        margin: 8px 0;
+    }
+
+    .hero-section {
+        padding-top: 60px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .products-header {
+        font-size: 1.3rem;
+    }
+
+    .feature-category img {
+        width: 80px;
+        height: auto;
+    }
+
+    .mobile-menu-btn {
+        display: inline-flex;
+    }
+}
+
+
 .feature-category {
     display: flex;
     flex-direction: column;
@@ -1206,17 +1340,19 @@ footer hr {
     justify-content: center;
     cursor: pointer;
 }
-.feature-category p{
+
+.feature-category p {
     font-family: Inter;
-font-weight: 700;
-font-style: Bold;
-font-size: 11.72px;
-leading-trim: NONE;
-line-height: 35px;
-letter-spacing: 0%;
-text-align: center;
-color: var(--black);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 11.72px;
+    leading-trim: NONE;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--black);
 }
+
 .flash-sale-card {
     position: relative;
 }
@@ -1296,4 +1432,68 @@ color: var(--black);
     leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
+}
+
+.work-card {
+    background-color: var(--primary-green);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.work-card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 25.83px;
+    line-height: 47.62px;
+    color: #00000029;
+}
+
+.work-card div {
+    border-left: 1px solid #0000001A;
+    padding-left: 20px;
+}
+
+.seller-card {
+    background-color: var(--primary-green);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seller-card img {
+    width: 70px;
+    height: 70px;
+}
+
+.seller-card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 44.91px;
+    line-height: 46.8px;
+    letter-spacing: 0%;
+    text-align: right;
+color: #00000029;
+
+}
+
+.seller-card div {
+    border-top: 1px solid #0000001A;
+    padding-left: 20px;
+    padding-top: 20px;
 }

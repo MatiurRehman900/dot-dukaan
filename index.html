@@ -23,7 +23,10 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 sticky-top">
-        <div class="w-100 px-5 d-flex justify-content-between align-items-center">
+        <div class="w-100 px-3 px-md-5 d-flex justify-content-between align-items-center">
+            <button class="mobile-menu-btn d-lg-none btn btn-link text-white" aria-label="Open menu">
+                <i class="fa fa-bars" style="font-size: 22px;"></i>
+            </button>
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">
                 <!-- <span>dot-dukaan</span> -->
@@ -31,7 +34,7 @@
             </a>
 
             <!-- Menu Items -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,7 +47,7 @@
                         <a class="nav-link" href="pages/vendor.html">Vendors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/Support.html">Partners</a>
+                        <a class="nav-link" href="pages/partner.html">Partners</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/Support.html">Support</a>
@@ -60,7 +63,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section px-5">
+    <section class="hero-section px-3 px-md-5">
         <div class="text-white">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -82,7 +85,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="featured-categories-row">
+                    <div class="featured-categories-row d-none d-md-block">
                         <div class="d-flex flex-wrap justify-content-center align-items-center featured-btns">
                             <p class="mt-1 mr-3 text-white">Featured Categories:</p>
                             <button class="btn btn-sm btn-outline-light category-btn " data-cat="kitchen">Kitchen
@@ -172,8 +175,8 @@
 
      <!-- choose us section -->
     <section class="bg-secondary-blue mb-5 py-5">
-        <div class="px-5 py-4">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="px-3 px-md-5 py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center" style="gap: 20px;">
                 <div class="choose-us-item">
                     <img src="/assets/images/viral-product-icon.png" alt="" class="mr-3">
                     <div>
@@ -221,7 +224,7 @@
     </section>
     <!-- Featured Products Section -->
     <section class="products-section pb-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="products-header">Viral Products</h2>
                 <a href="#" class="products-view-all d-flex align-items-center ">View all <i class="fas fa-arrow-right ml-3" style="font-size: 20px;"></i></a>
@@ -359,7 +362,7 @@
 
     <!-- Three Growth Engines Section -->
     <section class="pb-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <h2 class="growth-engines-title text-center mb-5">Three Growth Engines</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
@@ -403,7 +406,7 @@
     <!-- Simple Process Section -->
     <section class="process-section mb-5 py-5">
 
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <h2 class="process-title">Simple Process for All Ecosystem Participants</h2>
             <div class="row">
                 <div class="col-md-6">
@@ -469,7 +472,7 @@
 
     <!-- How It Stands Out Section -->
     <section class="standout-section pb-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <h2 class="standout-title">How DotDukaan Stands Out</h2>
             <hr>
             <div class="row mt-4">
@@ -512,10 +515,10 @@
 
     <!-- How Partners Work Section -->
     <section class="partners-section py-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-md-flex justify-content-between align-items-center">
                         <h4 class="partners-header mb-4">How Our Partners Work</h4>
 
                         <!-- Nav Tabs -->
@@ -548,7 +551,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="partners-image-box">
-                                <img src="/assets/images/patners-img.png" width="100%" height="700px" alt="">
+                                <img src="/assets/images/patners-img.png" width="100%" class="mb-3" alt="">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -609,7 +612,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="partners-image-box">
-                                <img src="/assets/images/patners-img.png" width="100%" height="700px" alt="">
+                                <img src="/assets/images/patners-img.png" width="100%" class="mb-3" alt="">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -670,7 +673,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="partners-image-box">
-                                <img src="/assets/images/patners-img.png" width="100%" height="700px" alt="">
+                                <img src="/assets/images/patners-img.png" width="100%" class="mb-3" alt="">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -729,7 +732,7 @@
 
     <!-- FAQ Section -->
     <section class="faq-section py-5">
-        <div class="px-5">
+        <div class="px-3 px-md-5">
             <h2 class="faq-title">Frequently Answer & Questions</h2>
             <hr class="mb-5">
             <div class="row">
@@ -905,7 +908,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row bg-primary-green px-5" style="padding: 80px 0;">
+            <div class="row bg-primary-green px-3 px-md-5" style="padding: 80px 0; gap: 20px;">
                 <div class="col-md-5" style="border-right: 2px solid #00000025;">
                     <div class="d-flex footer-contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -946,7 +949,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/home.js" defer></script>
+    <script src="assets/js/global.js" defer></script>
 </body>
 
 </html>
