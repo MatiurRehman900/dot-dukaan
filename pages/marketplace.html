@@ -1,202 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace - dot-dukaan</title>
-    
+    <title>dot-dukaan - Pakistan's First B2B E-Commerce Hub</title>
+
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Science+Gothic:wght@100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/variables.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.5rem;">dot-dukaan</span>
+    <nav class="navbar navbar-expand-lg navbar-dark w-100 sticky-top" style="background-color: black;">
+        <div class="w-100 px-5 d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/index.html">
+                <!-- <span>dot-dukaan</span> -->
+                <img src="/assets/images/logo.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="marketplace.html">Marketplace <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vendor.html">Vendor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="partner.html">Partner</a>
-                    </li>
-                </ul>
+
+            <!-- Menu Items -->
+            <div class="input-group  marketplace-search-bar" style="width: 35%;">
+                <div class="input-group-prepend dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">All</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Search Product Here..."
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append btn-search-group">
+                    <button class="btn" type="button">Search</button>
+                </div>
+            </div>
+
+            <!-- Login Button -->
+            <div class="d-flex align-items-center" style="gap: 15px;">
+                <div class="notification-icon">
+                    <div class="notification-badge">01</div>
+                    <img src="/assets/images/graph-icon-white.png" alt="">
+                </div>
+                <div class="notification-icon">
+                    <div class="notification-badge">02</div>
+                    <img src="/assets/images/heart-icon-white.png" alt="">
+                </div>
+                <div class="notification-icon">
+                    <div class="notification-badge">03</div>
+                    <img src="/assets/images/shopping-bag-icon-white.png" alt="">
+                </div>
+                <button class="btn navbar-btn d-none d-lg-block ml-4">
+                    Login / Register
+                </button>
             </div>
         </div>
     </nav>
-
-    <!-- Page Header -->
-    <section class="py-4" style="background-color: var(--light-gray);">
-        <div class="container">
-            <h1 class="display-4" style="color: var(--dark);">Marketplace</h1>
-            <p class="text-muted">Discover amazing products from trusted vendors</p>
-        </div>
-    </section>
-
-    <!-- Search and Filter Section -->
-    <section class="py-4">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-8">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search products..." aria-label="Search products">
-                        <div class="input-group-append">
-                            <button class="btn" style="background-color: var(--primary-blue); color: white;" type="button">
-                                Search
-                            </button>
-                        </div>
+    <hr class="m-0 p-0">
+    <div class="px-5" style="background-color: black;">
+        <div class="container-fluid">
+            <div class="row py-3 align-items-center">
+                <div class="col-md-2 pl-0">
+                    <div class="d-flex align-items-center">
+                        <img src="/assets/images/menu 1.png" class="border p-2" alt="" style="border-radius: 10px;">
+                        <h6 class="text-white ml-3 mb-0">Shop by Department</h6>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <select class="custom-select">
-                        <option selected>Sort by</option>
-                        <option value="1">Newest</option>
-                        <option value="2">Price: Low to High</option>
-                        <option value="3">Price: High to Low</option>
-                        <option value="4">Most Popular</option>
-                    </select>
+                <div class="col-md-7 pl-0">
+                    <div class="marketplace-nav-menus">
+                        <ul class="mb-0 p-0">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Kitchen Utensils</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cleaning Supplies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Storage & Organization</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home Decor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home Improvement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">See More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="d-flex justify-content-end align-items-center marketplace-nav-menus-button" style="gap: 10px;">
+                        <a href="" class="text-white text-decoration-underline fs-6">Become a Seller</a>
+                        <div style="height: 20px; border: 1px solid #ffffff83;"></div>
+                        <a href="" class="text-white text-decoration-underline fs-6">Track your Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section px-5 m-5"
+        style="background-image: url('/assets/images/marketplace-hero-bg.png'); 
+        background-size: cover;
+        padding-top: 70px;
+        border-radius: 30px;">
+        <div class="text-white">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="rounded-pill px-2 py-1 fw-bold mb-3"
+                        style="background-color: #ffffff40; width: fit-content; font-size: 12px;">Buy From Verified
+                        Sellers</div>
+                    <h1 class="hero-title">
+                        Pakistan’s First B2B E-Commerce Marketplace
+                    </h1>
+                    <p class="hero-description">
+                        Empowering retailers, wholesalers, and manufacturers to connect, trade, and grow, all in one
+                        trusted digital
+                        platform.
+                    </p>
+
+                </div>
+            </div>
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-12">
+                    <hr class="m-0 mb-4 p-0" style="border-color: rgba(255, 255, 255, 0.328);">
+                </div>
+                <div class="col-md-12">
+                    <div class="px-5 py-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="choose-us-item">
+                                <img src="/assets/images/viral-product-icon.png" alt="" class="mr-3">
+                                <div>
+                                    <h5 class="text-white mb-0">Viral Product Intel</h5>
+                                    <p class="mb-0 text-white">We trend-jack TikTok, Instagram
+                                        & YouTube for you</p>
+                                </div>
+                            </div>
+
+                            <div class="choose-us-item">
+                                <img src="/assets/images/hassel-free-icon.png" alt="" class="mr-3">
+                                <div>
+                                    <h5 class="text-white mb-0">Hassle-Free Sourcing</h5>
+                                    <p class="mb-0 text-white">No customs or hidden costs</p>
+                                </div>
+                            </div>
+
+                            <div class="choose-us-item">
+                                <img src="/assets/images/24:7-icon.png" alt="" class="mr-3">
+                                <div>
+                                    <h5 class="text-white mb-0">24/7 Dedicated Support</h5>
+                                    <p class="mb-0 text-white">Account managers for vendors,
+                                        buyers, and partners</p>
+                                </div>
+                            </div>
+
+                            <div class="choose-us-item">
+                                <img src="/assets/images/smaller-moq-icon.png" alt="" class="mr-3">
+                                <div>
+                                    <h5 class="text-white mb-0">Smaller MOQs</h5>
+                                    <p class="mb-0 text-white">Start from 10 units minimum</p>
+                                </div>
+                            </div>
+
+                            <div class="choose-us-item">
+                                <img src="/assets/images/tracking-icon.png" alt="" class="mr-3">
+                                <div>
+                                    <h5 class="text-white mb-0">End-to-End Order Tracking</h5>
+                                    <p class="mb-0 text-white">Real-time visibility from warehouse to
+                                        doorstep.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Grid -->
-    <section class="py-5">
-        <div class="container">
+
+    <!-- Featured Products Section -->
+    <section class="pt-3 px-5">
+        <div class="px-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="products-header">Featured Categories</h2>
+            </div>
+            <hr>
             <div class="row">
-                <!-- Product Card 1 -->
+                <div class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-4 py-4">
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 514.png" alt="Kitchen Utensils">
+                        <p>Kitchen Utensils</p>
+                    </div>
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 515.png" alt="Cleaning Supplies">
+                        <p>Cleaning Supplies</p>
+                    </div>
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 516.png" alt="Storage & Organization">
+                        <p>Storage & Organization</p>
+                    </div>
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 517.png" alt="Home Décor">
+                        <p>Home Décor</p>
+                    </div>
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 518.png" alt="Home & Improvement">
+                        <p>Home & Improvement</p>
+                    </div>
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 519.png" alt="Health & Beauty">
+                        <p>Health & Beauty</p>
+                    </div>
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 518.png" alt="Smart Gadgets">
+                        <p>Smart Gadgets</p>
+                    </div>
+                    <div class="feature-category">
+                        <img src="/assets/images/Rectangle 519.png" alt="Electronic Accessories">
+                        <p>Electronic Accessories</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <img src="/assets/images/blue-logo.png" alt="" class="position-absolute p-5">
+                        <img src="/assets/images/market-buyer.png" alt="" class="w-100">
+                        <div class="growth-engine-overlay position-absolute" style="bottom: 0;">
+                            <h4 class="growth-engine-title mb-4 text-dark" style="border-color: var(--dark);">Buyer</h4>
+                            <p class="text-dark">Buy with confidence, access trusted Vendors, and enjoy seamless
+                                commerce designed to empower every buyer across Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img src="/assets/images/green-logo.png" alt="" class="position-absolute p-5">
+
+                        <img src="/assets/images/market-vendor.png" alt="" class="w-100">
+                        <div class="growth-engine-overlay position-absolute" style="bottom: 0;">
+                            <h4 class="growth-engine-title mb-4">Vendor</h4>
+                            <p>Reach hundreds of buyers across Pakistan through our B2B ECommerce ecosystem. Sell
+                                smarter, scale faster.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Products Section -->
+    <section class="products-section py-5">
+        <div class="px-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="products-header">Viral Products</h2>
+                <a href="#" class="products-view-all d-flex align-items-center ">View all <i
+                        class="fas fa-arrow-right ml-3" style="font-size: 20px;"></i></a>
+            </div>
+            <hr>
+            <div class="row mt-5">
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-img-top" style="background-color: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: var(--gray);">Product Image</span>
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product 1</h5>
-                            <p class="card-text text-muted">High-quality product from trusted vendor</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.25rem;">$29.99</span>
-                                <button class="btn btn-sm" style="background-color: var(--primary-green); color: var(--dark);">
-                                    Add to Cart
-                                </button>
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product Card 2 -->
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-img-top" style="background-color: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: var(--gray);">Product Image</span>
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product 2</h5>
-                            <p class="card-text text-muted">Premium quality items</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.25rem;">$49.99</span>
-                                <button class="btn btn-sm" style="background-color: var(--primary-green); color: var(--dark);">
-                                    Add to Cart
-                                </button>
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Product Card 3 -->
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-img-top" style="background-color: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: var(--gray);">Product Image</span>
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product 3</h5>
-                            <p class="card-text text-muted">Exclusive marketplace deals</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.25rem;">$39.99</span>
-                                <button class="btn btn-sm" style="background-color: var(--primary-green); color: var(--dark);">
-                                    Add to Cart
-                                </button>
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Product Card 4 -->
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-img-top" style="background-color: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: var(--gray);">Product Image</span>
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product 4</h5>
-                            <p class="card-text text-muted">Best sellers in the market</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.25rem;">$59.99</span>
-                                <button class="btn btn-sm" style="background-color: var(--primary-green); color: var(--dark);">
-                                    Add to Cart
-                                </button>
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Pagination -->
-            <nav aria-label="Page navigation" class="mt-5">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-            </nav>
+    <!-- Flash Sale Section -->
+    <section class="flash-sale-section pb-5">
+        <div class="px-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="flash-sale-header">Flash Sale</h2>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="flash-sale-card">
+                        <div class="flash-sale-off-badge">30% off</div>
+                        <img src="/assets/images/flash-sale-1.png" alt="">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flash-sale-card">
+                        <div class="flash-sale-off-badge">30% off</div>
+                        <img src="/assets/images/flash-sale-2.png" alt="">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flash-sale-card">
+                        <div class="flash-sale-off-badge">30% off</div>
+                        <img src="/assets/images/flash-sale-3.png" alt="">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flash-sale-card">
+                        <div class="flash-sale-off-badge">30% off</div>
+                        <img src="/assets/images/flash-sale-4.png" alt="">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+        <section class="cta-section pb-5 mb-5" style="background-image: url('/assets/images/bussniess-bg.png');">
+            <div class="container py-4">
+                <center>
+                    <div class="rounded-pill partners-badge bg-dark text-white text-center mb-3">
+                        we make brands powerful
+                    </div>
+                </center>
+                <h2 class="cta-title">Empowering Businesses <br>
+                    Pakistan’s <span class="text-success">First B2B eCommerce</span> Ecosystem.</h2>
+                <p class="cta-description">Switched from China sourcing to DotDukaan's viral products. Revenue grew
+                    400%
+                    in 6 months with 3-day delivery instead of 3 weeks.</p>
+
+                <button class="btn cta-btn bg-white text-dark">
+                    Buy Product
+                </button>
+            </div>
+        </section>
+
+    <!-- Featured Products Section -->
+    <section class="products-section pb-5">
+        <div class="px-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="products-header">Best Sellers</h2>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="product-image">
+                            <img src="/assets/images/product.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="product-title">Samsung Galaxy S22 Ultra
+                                (Digital)</h6>
+                            <p class="card-text text-muted small border-top border-bottom py-1 mb-0">Min. Order: 10
+                                Pieces</p>
+                            <div>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                            <span class="product-price">Rs. 4,999</span>
+
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <img src="/assets/images/graph-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/favorite-icon.png" alt="" class="product-icons">
+                                    <img src="/assets/images/bag-icon.png" alt="" class="product-icons">
+
+                                </div>
+                                <button class="btn btn-sm btn-black px-5 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Growth Engines Section -->
+    <section class="pb-5">
+        <div class="px-5">
+            <h2 class="growth-engines-title mb-5">Our Influencer Promotions </h2>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0">
+                        <img src="/assets/images/infulencer-1.png" width="100%" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0">
+                        <img src="/assets/images/infulencer-2.png" width="100%" alt="">
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0">
+                        <img src="/assets/images/infulencer-3.png" width="100%" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container p-5">
+            <center>
+                <div class="rounded-pill partners-badge bg-dark text-white text-center mb-3">
+                    we make brands powerful
+                </div>
+            </center>
+            <h2 class="cta-title">Get Weekly Viral Product Reports</h2>
+            <p class="cta-description">Stay ahead of trends straight to your inbox</p>
+
+            <div class="input-group cta-input-group">
+                <input type="email" class="form-control cta-input" placeholder="Enter your email">
+                <button class="btn cta-btn">
+                    Subscribe
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <h5 style="color: var(--primary-green);">dot-dukaan</h5>
-                    <p>Your trusted marketplace platform</p>
+    <footer class="text-white">
+        <div class="container-fluid">
+            <div class="row mb-4 px-5 pb-5 mb-5">
+                <div class="col-md-3">
+                    <img src="/assets/images/logo.png" alt="" class="mb-5">
+                    <p>Empowering Businesses - Pakistan’s First E-Commerce Hub: Empowering companies with a
+                        centralized
+                        platform for streamlined trading and business growth across Pakistan.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="vendor.html">Vendor</a></li>
-                        <li><a href="partner.html">Partner</a></li>
+                <div class="col-md-3 pl-5" style="border-left: 1px solid #FFFFFF1C;">
+                    <h6>Our Policies</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Shipping policy</a></li>
+                        <li><a href="#">Service policy</a></li>
+                        <li><a href="#">Return/Refund/Exchange Policy</a></li>
+
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Contact</h5>
-                    <p>Email: support@dotdukaan.com</p>
+                <div class="col-md-3 pl-5" style="border-left: 1px solid #FFFFFF1C;">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">For Sellers</a></li>
+                        <li><a href="#">For Buyers</a></li>
+                        <li><a href="#">For Partners</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 pl-5" style="border-left: 1px solid #FFFFFF1C;">
+                    <h6>Account</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
                 </div>
             </div>
-            <hr style="border-color: var(--gray);">
-            <div class="text-center">
-                <p>&copy; 2025 dot-dukaan. All rights reserved.</p>
+            <div class="row bg-primary-green px-5" style="padding: 80px 0;">
+                <div class="col-md-5" style="border-right: 2px solid #00000025;">
+                    <div class="d-flex footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h6 class="mb-0">Address</h6>
+                            <p class="mb-0">Building 93, Fairways Commercial, Raya DHA Phase-VI, Lahore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" style="border-right: 2px solid #00000025;">
+                    <div class="d-flex footer-contact-item">
+                        <i class="fa fa-phone"></i>
+                        <div>
+                            <h6 class="mb-0">Phone</h6>
+                            <p class="mb-0">+92 42 3725 4200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex footer-contact-item">
+                        <i class="fa fa-envelope"></i>
+                        <div>
+                            <h6 class="mb-0">Email</h6>
+                            <p class="mb-0">contact@Dotdukaan.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="row py-4">
+                <div class="col-md-12">
+                    <p class="text-center text-gray mb-0">&copy; <b>2026</b> DotDukaan . All rights reserved.
+                        <b>Powered
+                            by DotDukaan</b>
+                    </p>
+                </div>
+            </div>
     </footer>
 
     <!-- Bootstrap 4 JS -->
@@ -204,4 +740,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
