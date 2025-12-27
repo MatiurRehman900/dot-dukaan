@@ -295,6 +295,13 @@ a:hover {
     }
 }
 
+/* Mobile gap utility */
+@media (max-width: 768px) {
+    .gap-mobile-20 {
+        gap: 20px !important;
+    }
+}
+
 .choose-us-item h5 {
     font-family: Century Gothic;
     font-weight: 700;
