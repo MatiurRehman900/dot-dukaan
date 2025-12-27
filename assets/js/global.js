@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.featured-btns .category-btn');
   const panels = document.querySelectorAll('.category-panel');
+  const categoryOptions = document.querySelector('.category-options');
+  const featuredBtns = document.querySelector('.featured-btns');
 
   let clickedActiveBtn = null;
   let hoverTimeout = null;
@@ -12,14 +14,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  function updateOverlayPosition() {
+    if (categoryOptions && featuredBtns && categoryOptions.classList.contains('active')) {
+      const rect = featuredBtns.getBoundingClientRect();
+      const topPosition = rect.bottom + window.scrollY + 10;
+      categoryOptions.style.top = topPosition + 'px';
+    }
+  }
+
   function showOnlyPanel(cat) {
     panels.forEach(p => {
       p.style.display = (p.getAttribute('data-cat') === cat) ? 'block' : 'none';
     });
+    if (categoryOptions) {
+      categoryOptions.classList.add('active');
+      updateOverlayPosition();
+    }
   }
 
   function hideAllPanels() {
     panels.forEach(p => p.style.display = 'none');
+    if (categoryOptions) categoryOptions.classList.remove('active');
   }
 
   // When a category button is clicked — make it the persistent active selection
@@ -106,6 +121,10 @@ document.addEventListener('DOMContentLoaded', function () {
     hideAllPanels();
     buttons.forEach(b => b.classList.remove('active'));
   });
+
+  // Update overlay position on scroll and resize
+  window.addEventListener('scroll', updateOverlayPosition);
+  window.addEventListener('resize', updateOverlayPosition);
 
     // Do not auto-open any category by default. Panels stay hidden until user
     // clicks or hovers a category. To enable a default, call `first.click()`
@@ -286,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="d-flex align-items-center">
                     <img src="/assets/images/logo.png" alt="" style="height:36px;">
                 </div>
-                <button class="mobile-sidebar-close btn btn-link"><i class="fa fa-times"></i></button>
+                <button class="mobile-sidebar-close btn btn-link text-white"><i class="fa fa-times"></i></button>
             </div>
         </div>
         <div class="mobile-sidebar-body">
