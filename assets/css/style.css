@@ -270,6 +270,31 @@ a:hover {
     }
 }
 
+/* Featured Categories */
+.featured-categories-container {
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .featured-categories-container {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    
+    .feature-category {
+        flex-shrink: 0;
+        min-width: 120px;
+    }
+}
+
+@media (min-width: 769px) {
+    .featured-categories-container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
 .choose-us-item h5 {
     font-family: Century Gothic;
     font-weight: 700;
