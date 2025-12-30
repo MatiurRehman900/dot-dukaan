@@ -270,6 +270,21 @@ a:hover {
     }
 }
 
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-toggle:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
 /* Featured Categories */
 .featured-categories-container {
     overflow-x: auto;
@@ -281,7 +296,7 @@ a:hover {
         justify-content: flex-start;
         flex-wrap: nowrap;
     }
-    
+
     .feature-category {
         flex-shrink: 0;
         min-width: 120px;
@@ -331,7 +346,7 @@ a:hover {
 
 .category-btn {
     font-weight: 600;
-    padding: 12px 19px;
+    padding: 12px 12px;
     border-radius: 25px;
 }
 
@@ -394,6 +409,7 @@ a:hover {
         opacity: 0;
         transform: translateY(-5px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1551,7 +1567,7 @@ footer hr {
     line-height: 46.8px;
     letter-spacing: 0%;
     text-align: right;
-color: #00000029;
+    color: #00000029;
 
 }
 
@@ -1559,4 +1575,75 @@ color: #00000029;
     border-top: 1px solid #0000001A;
     padding-left: 20px;
     padding-top: 20px;
+}
+
+.growth-section-header {
+    background-color: #000000;
+    border-radius: 33.19px;
+    height: 213px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap !important;
+    font-family: Century Gothic;
+}
+
+.heading {
+    font-size: 25.38px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20;
+    font-family: Century Gothic;
+}
+
+.description {
+    font-size: 15.72px;
+    font-family: Century Gothic;
+}
+
+.heading-border-right {
+    border-right: 0.98px solid #FFFFFF61;
+    height: 113px;
+}
+
+.right-border {
+
+    border-right: 0.98px solid #0000002E;
+    height: 113px;
+}
+
+.count {
+    background-color: #000000;
+    color: white;
+    width: 48px !important;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-right: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    padding-right: 11px;
+    align-items: center;
+    font-family: Century Gothic;
+}
+
+.count1 {
+    background: #fff;
+    color: #000;
+    width: 48px !important;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-right: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    padding-right: 11px;
+    font-family: Century Gothic;
 }
