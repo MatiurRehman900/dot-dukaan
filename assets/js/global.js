@@ -384,5 +384,21 @@ document.addEventListener('DOMContentLoaded', function () {
         document.addEventListener('DOMContentLoaded', initMobileSidebar);
     } else {
         initMobileSidebar();
-    }
-})();
+    }})();
+
+// Set active nav-link based on current page
+document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        // Check if the current path matches the link href
+        if (href && currentPath.includes(href.replace(/^\/pages\/|^\//, ''))) {
+            link.classList.add('active');
+        } else if (href === '/index.html' && (currentPath === '/' || currentPath.endsWith('index.html'))) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });})();
